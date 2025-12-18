@@ -4,12 +4,15 @@ Live Demo: https://furiganagenerator.streamlit.app/
 
 NLP web application written in Python 3.13 to generate Furigana for Japanese text. This project utilizes morphological analysis to handle Kanji-Kana orthography.
 
+# Summary
+
+This Furigana Generator utilizes SudachiPy to perform morphological analysis, addressing the primary issue of inherent ambiguity of Japanese word boundaries in text. By utilizing Sudachi's dictionary, we resolve Part-of-Speech context in order to select the phonetic reading given. As the reading given is in Katakana, the next problem is in regards to our conversion pipeline. The raw lexical reading is next processed utilizing pykakasi to ensure Hirgana output, ensuring consistency between data received and the orthographic display a user would see elsewhere for Furigana. 
+
 # Tools Utilized
 
 * [SudachiPy](https://github.com/WorksApplications/SudachiPy) - Morphological Tokenization
 * [pykakasi](https://github.com/miurahr/pykakasi) - Normalizing Katakana to Hiragana.
 * [Streamlit](https://streamlit.io/) - Deployment, WebUI
-
 
 # Installation & Usage
 
