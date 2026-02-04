@@ -54,4 +54,3 @@ with slit.expander("Implementation Details"):
     - Phonetics: pykakasi for Katakana to Hiragana normalization.
     - Visualization: HTML <ruby> tags for Furigana display.
     """)
-
